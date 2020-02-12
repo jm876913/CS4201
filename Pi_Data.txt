@@ -1,0 +1,66 @@
+First experimental pi value
+3.141956
+First experimental percent error
+0.011586482267583088
+Second experimental pi value
+3.142256
+Second experimental value percent error
+0.02113578083977798
+The percent difference between the two experimental values
+0.009547736454473179
+third experimental pi value
+3.140732
+third experimental value percent error
+0.02113578083977798
+average experimental value from all simulations
+3.1415333333333333
+average experimental value percent error
+0.001867418387456849
+
+*************************************************************
+
+First experimental pi value
+3.1416992
+Second experimental pi value
+3.14179976
+The percent difference between the two experimental values
+0.003200764435231681
+third experimental pi value
+3.14150396
+average experimental value from all simulations
+3.1416171466666665
+average experimental value percent error
+0.0008004434269729857
+
+************************************************************
+
+First experimental pi value
+3.14147476
+Second experimental pi value
+3.14162764
+The percent difference between the two experimental values
+0.004866385752360518
+third experimental pi value
+3.14186556
+average experimental value from all simulations
+3.1416087422222225
+average experimental value percent error
+0.0005329215958776841
+
+***********************************************************
+
+First experimental pi value
+3.14157064
+Second experimental pi value
+3.14190484
+The percent difference between the two experimental values
+0.01063742513403341
+third experimental pi value
+3.14145528
+average experimental value from all simulations
+3.141697902222222
+average experimental value percent error
+0.0033709731315155846
+
+
+

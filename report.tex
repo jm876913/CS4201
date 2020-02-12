@@ -1,0 +1,68 @@
+\documentclass{llncs}
+
+\usepackage{listings}
+\usepackage[export]{adjustbox}
+
+\lstdefinelanguage{Coq}{
+  ,morekeywords={match,end,Definition,Inductive,Lemma,Record,
+    Variable,Section,case,of,if,then,else,is,let,in,do,return,with}%
+  ,keywordstyle=\bfseries
+  ,basicstyle=\sffamily
+  ,columns=fullflexible
+  ,numberstyle=\tiny
+  ,escapeinside={@}{@}
+  ,literate=
+  {<-}{{$\leftarrow\;$}}1
+  {=>}{{$\rightarrow\;$}}1
+  {->}{{$\rightarrow\;$}}1
+  {<->}{{$\leftrightarrow\;$}}1
+  {<==}{{$\leq\;$}}1
+  {\\/}{{$\vee\;$}}1
+  {/\\}{{$\land\;$}}1
+}
+\lstset{language=Coq}
+
+\begin{document}
+
+\title{Monte Carlo: Estimation of Pi}
+
+\author{Jacob Mulligan}
+\institute{Ohio University, Athens, OH 45701}
+
+\maketitle
+
+\section{Introduction}
+
+\subsection{Subsection1} 	For my final Project I chose to do the Monte Carlo estimation of pi. I’m sure most are aware of Pi and that it is an irrational number and an extremely important mathematical constant in many applications of applied science. Pi was initially called Archimedes constant, because it was discovered by Archimedes using a circle and multiple polygons. Starting with a hexagon and eventually working his way up to a 96-sided polygon. How this works is from the ratio of:
+\begin{equation}
+Pi = Circumference(perimeter)/Diameter.
+\end{equation}
+Continually increasing the sides, the approximation gets closer however, too many sides and the estimation becomes too high for the expected value. After all of Archimedes’ calculations his estimation of pi came out as:
+\begin{equation}
+3.14084 < pi < 3.14285
+\end{equation}
+Individually the lower and upper bound of the inequality yields a percent error of 0.023873261628667\% error for the lower and 0.040107079536167\% error for the upper. They are close estimations and Archimedes is no doubt a genius of his time for figuring this out, but there are newer approaches to get the estimation of pi and the method I used for my final project yielded a much lower percent error comparing it to the expected value. 
+I have always had an interest in the value pi because of its countless applications in math and science. I also find it interesting how there are multiple ways in calculating its value.\\
+
+\subsection{Subsection2} In my project I use a Monte Carlo method in estimating the value of pi. A Monte Carlo Method is when simulations are used to model the probability of different outcomes in a process that cannot easily be predicted due to the intervention of random variables. It is a technique used in most fields to understand the impact of risk and uncertainty in prediction and forecasting models. However,what makes my work interesting compared to existing methods of the Monte Carlo estimation of pi is that my method runs a Monte Carlo simulation on Monte Carlo simulations. This approach I found best and most interesting because it yielded better results meaning a closer estimation of the expected value, opposed to running a singular Monte Carlo simulation.
+
+\section{Technical Development}
+\subsection{Subsection1}At the beginning the project presents the method to which the estimation of pi can be determined. Suppose you have a circle inscribed in a square. The experiment simply consists of throwing darts on this figure completely at random (meaning that every point on the dartboard has an equal chance of being hit by the dart). How can we use this experiment to estimate Pi? The platform of the experiment will look something like this.
+This is a citation.~\cite{gennaro2010non}
+
+This is a chunk of code:
+\begin{lstlisting}
+  Definition f(x : nat) := S x.
+  Definition g(y : nat) := f y.
+\end{lstlisting}
+
+This is inline code \lstinline|Fixpoint f(x : nat) := ...| typeset within a line of text.
+
+\paragraph{Para1.} This is a paragraph, or subsubsection.
+
+\section{Conclusion}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
